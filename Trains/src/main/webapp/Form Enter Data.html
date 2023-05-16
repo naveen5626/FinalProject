@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Train Registration</title>
+<style>
+/* Navigation bar styles */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-size: 18px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Form styles */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form p {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Help</a>
+</div>
+
+<!-- Form -->
+<h1 style="text-align: center;">Train Registration</h1>
+<form action="InsertTrainDetails" method="post">
+  <p>Train Number: <input type="text" name="train_number" /></p>
+  <p>Train Name: <input type="text" name="train_name" /></p>
+  <p>Start City: <input type="text" name="starting_city" /></p>
+  <p>End City: <input type="text" name="destination" /></p>
+  <p>Seat Capacity: <input type="text" name="seat_capacity" /></p>
+  <p><input type="submit" value="Submit" /></p>
+</form>
+
+</body>
+</html>
